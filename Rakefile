@@ -13,7 +13,7 @@ end
  
 desc "Install SpawnEclipse to your applications folder"
 task :install => :compile do
-  puts "Copying scripts to your scripts folder"
-  system "cp ./bin/*.app ~/Applications/"
+  puts "Copying scripts to your Application directory"
+  system "cp -r ./bin/SpawnEclipse.app /Applications/SpawnEclipse.app"
   puts "Done"
 end
